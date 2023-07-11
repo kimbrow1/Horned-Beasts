@@ -5,7 +5,7 @@ class Beast extends React.Component {
       return (
         <div>
             <h2>{this.props.name}</h2>
-            <p>Hi Nice to meet you</p>
+            <p>Hi Nice to meet you James </p>
         </div>
       ) 
     }
