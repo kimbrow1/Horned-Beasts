@@ -9,7 +9,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 ### Links and Resources
 
 * [submission PR](http://xyz.com)
- 
+
 
 ### Lighthouse Accessibility Report Score
 
