@@ -65,4 +65,4 @@ Then each image should be rendered in a visually pleasing way: in columns, as sc
 ### Reflections and Comments
 
 * Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* This is also a good place to reflect on the tools and resources used and learned!
