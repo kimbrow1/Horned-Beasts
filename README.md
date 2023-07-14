@@ -6,7 +6,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Author: Brian Kimbrow
 
-### Feature #1: Display Images
+### Feature 1: Display Images
 
 * Given that a user wants to view the details of the image
 When the user clicks on an individual image
@@ -14,7 +14,7 @@ Then the image should render larger on the screen with the description displayed
 
 #### Time Estimate
 
-### Feature #2: Allow Users to Favorite Individual Beasts
+### Feature 2: Allow Users to Favorite Individual Beasts
 
 * Given that a user wants to view specific images
 When the user enters a character into the search field
@@ -39,4 +39,4 @@ Then each image should be rendered in a visually pleasing way: in columns, as sc
 ### Reflections and Comments
 
 * Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned!
+* This is also a good place to reflect on the tools and resources used and learned.
