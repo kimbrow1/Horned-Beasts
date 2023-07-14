@@ -34,6 +34,10 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: bold;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
 }
 
 button {
@@ -65,5 +69,22 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    
   }
 }
+
+img {
+  width: 400px;
+  border-radius: 30%;
+}
+
+
+
+body {
+  background-color: black;
+  color: lightblue;
+  font-weight: bold;
+  font-style: italic;
+  padding: 10px;
+}
+
