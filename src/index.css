@@ -76,6 +76,8 @@ button:focus-visible {
 img {
   width: 400px;
   border-radius: 30%;
+  display: flex;
+
 }
 
 

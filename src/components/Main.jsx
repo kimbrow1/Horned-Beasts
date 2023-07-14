@@ -7,58 +7,72 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-
-
-
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalIsShowing: false,
-      modalHornedBeastName: "", 
-      modalImgUrl: "" 
+      selectedBeast: null,
+      searchValue: ""
     };
   }
 
-  handleShow = () => {
-    this.setState({ modalIsShowing: true });
+  handleSelectBeast = (beast) => {
+    this.setState({ selectedBeast: beast });
   };
 
-  handleClose = () => {
-    this.setState({ modalIsShowing: false });
+  handleCloseModal = () => {
+    this.setState({ selectedBeast: null });
+  };
+
+  handleSearchChange = (event) => {
+    const searchValue = event.target.value.toLowerCase();
+    this.setState({ searchValue });
   };
 
   render() {
-    let animalComponents = [];
-    data.forEach((animal) => {
-      animalComponents.push(
-        <Col>
-          <Beast
-            title={animal.title}
-            imgSrc={animal.image_url}
-            description={animal.description}
-          />
-        </Col>
-      );
-    });
+    const { selectedBeast, searchValue } = this.state;
+    const { data } = this.props;
+
+    // Filter the data based on the search value
+    const filteredData = data.filter(
+      (beast) =>
+        beast.title.toLowerCase().includes(searchValue) ||
+        beast.description.toLowerCase().includes(searchValue)
+    );
+
     return (
       <Container>
-        <Button variant="primary" onClick={this.handleShow}>
-          Launch
-        </Button>
-        <Modal show={this.state.modalIsShowing} onHide={this.handleClose}>
+
+        <input
+          type="text"
+          value={searchValue}
+          onChange={this.handleSearchChange}
+          placeholder="Search by title or keyword"
+        />
+        <Row>
+          {filteredData.map((beast) => (
+            <Col key={beast.id} sm={4} onClick={() => this.handleSelectBeast(beast)}>
+              <Beast
+                title={beast.title}
+                imgSrc={beast.image_url}
+                description={beast.description}
+              />
+            </Col>
+          ))}
+        </Row>
+        <Modal show={selectedBeast !== null} onHide={this.handleCloseModal}>
           <Modal.Header closeButton>
-            <Modal.Title>Animal</Modal.Title>
+            <Modal.Title>{selectedBeast?.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h2>{this.state.modalHornedBeastName}</h2>
-            <img src={this.state.modalImgUrl} alt="Modal Image" />
+            <img src={selectedBeast?.image_url} alt={selectedBeast?.title} />
+            <p>{selectedBeast?.description}</p>
           </Modal.Body>
         </Modal>
-        <Row>{animalComponents}</Row>
       </Container>
     );
   }
 }
 
 export default Main;
+
