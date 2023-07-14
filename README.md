@@ -2,7 +2,11 @@
 
 ## Horned Beast
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+### Feature #1: Display a Modal
+
+Given that a user wants to view the details of the image
+When the user clicks on an individual image
+Then the image should render larger on the screen with the description displayed
 
 ### Author: Student/Group Name
 
