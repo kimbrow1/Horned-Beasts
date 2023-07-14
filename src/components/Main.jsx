@@ -43,7 +43,7 @@ class Main extends React.Component {
     return (
       <Container>
 
-        <input
+        <input className="search"
           type="text"
           value={searchValue}
           onChange={this.handleSearchChange}
