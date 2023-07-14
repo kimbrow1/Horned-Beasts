@@ -95,4 +95,10 @@ body {
   background-color: lightblue;
   padding: 5px;
   margin-bottom: 55px;
+  border-radius: 45%;
+  color: black;
+  }
+
+  footer {
+    text-align: end;
   }

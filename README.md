@@ -6,42 +6,22 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Author: Brian Kimbrow
 
-### Links and Resources
-
-* [submission PR](http://https://github.com/kil91402/horned-beasts.git)
-* Any Links you used as reference
-
-### Lighthouse Accessibility Report Score
-
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
-
-### Reflections and Comments
-
-
-
-### Time Estimate
-
-* Number and name of feature: Lab-02
-
-Estimate of time needed to complete: 3 hrs
-
-Start time: 1:15 pm
-
-Finish time: 5:16 pm
-
-Actual time needed to complete: 4
-
 ### Feature #1: Display Images
 
-* Given that a user opens the application in the browser
-When the user navigates to the home page
-Then the photo gallery should display all of the beasts' images in the gallery.
+* Given that a user wants to view the details of the image
+When the user clicks on an individual image
+Then the image should render larger on the screen with the description displayed.
+
+#### Time Estimate
 
 ### Feature #2: Allow Users to Favorite Individual Beasts
 
-* Given that a user opens the application in the browser
-When a user clicks on an image of a beast
-Then the number of "Favorites" displayed on that beast will increase by one.
+* Given that a user wants to view specific images
+When the user enters a character into the search field
+Then only the images matching them.
+
+ ### Time Estimate
+
 
 ### Feature 3: Bootstrap
 
@@ -49,14 +29,8 @@ Then the number of "Favorites" displayed on that beast will increase by one.
 When the images are displayed on the screen
 Then each image should be rendered in a visually pleasing way: in columns, as screen width allows.
 
-### Stretch Goal: Add Interaction
+### Time Estimate
 
-* Given that a user opens the application in the browser
-    When a user clicks on an item other than the horned beasts, such as the title of the page or the footer,
-    Then the information and styles should change.
-
-    
-* Any Links you used as reference
 
 ### Lighthouse Accessibility Report Score
 
