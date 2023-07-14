@@ -1,6 +1,8 @@
 import React from "react";
+import "./Beasts.css";
 
 class Beast extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {

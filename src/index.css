@@ -72,3 +72,13 @@ img {
   width: 400px;
   border-radius: 30%;
 }
+
+
+
+body {
+  background-color: black;
+  color: lightblue;
+}
+
+.main-body {
+}
