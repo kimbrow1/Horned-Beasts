@@ -72,10 +72,9 @@ button:focus-visible {
   .my-select-class {
     background-color: lightblue;
     color: #1a1a1a;
-    border-radius: 40%;
+    border-radius: 45%;
     margin: 10px;
-    position: fixed;
-    margin-right: 300px;
-    right: 0;
-
+    float: right;
+    padding: 10px;
+    margin-bottom: 55px;
   }
