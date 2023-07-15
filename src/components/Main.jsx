@@ -42,7 +42,6 @@ class Main extends React.Component {
 
     return (
       <Container>
-
         <input className="search"
           type="text"
           value={searchValue}
