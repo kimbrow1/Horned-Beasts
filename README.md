@@ -2,7 +2,9 @@
 
 ## Horned Beasts
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+* This is a application that displays images and information of horned animals. This application will allow users to filter the images by number of horns and choose their favorite image.
+
+* In addition to that I focused on the component structure of the application. During this application I used Vite and fill it with components.
 
 ### Author: Brian Kimbrow
 
