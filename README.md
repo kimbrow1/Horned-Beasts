@@ -33,8 +33,7 @@ Then each image should be rendered in a visually pleasing way: in columns, as sc
 
 
 ### Lighthouse Accessibility Report Score
-
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+![Light House](<Screen Shot 2023-07-18 at 12.01.40 AM.png>)
 
 ### Reflections and Comments
 
