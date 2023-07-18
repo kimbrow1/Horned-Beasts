@@ -13,6 +13,7 @@ class Main extends React.Component {
     this.state = {
       selectedBeast: null,
       searchValue: "",
+      filter: "all"
     };
   }
 
@@ -29,16 +30,23 @@ class Main extends React.Component {
     this.setState({ searchValue });
   };
 
+  handleChangeHorns = (event) => {
+    const filter = event.target.value; 
+    this.setState({ filter });
+  };
+
   render() {
-    const { selectedBeast, searchValue } = this.state;
+    const { selectedBeast, searchValue, filter } = this.state;
     const { data } = this.props;
 
-    // Filter the data based on the search value
-    const filteredData = data.filter(
-      (beast) =>
+    const filteredData = data.filter((beast) => {
+      const matchSearch = (
         beast.title.toLowerCase().includes(searchValue) ||
         beast.description.toLowerCase().includes(searchValue)
-    );
+      );
+      const matchHorns = (filter === "all" || beast.horns === parseInt(filter));
+      return matchSearch && matchHorns;
+    });
 
     return (
       <Container>
@@ -49,14 +57,18 @@ class Main extends React.Component {
           onChange={this.handleSearchChange}
           placeholder="Search by title or keyword"
         />
-        <select className="my-select-class" onChange={this.handleSelectBeast} value={this.state.filter}>
+        <select
+          className="my-select-class"
+          onChange={this.handleChangeHorns}
+          value={filter}
+        >
           <option value="all">Select Number Of Horns</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
-</select>
+        </select>
         <Row>
           {filteredData.map((beast) => (
             <Col key={beast.id} sm={4} onClick={() => this.handleSelectBeast(beast)}>
