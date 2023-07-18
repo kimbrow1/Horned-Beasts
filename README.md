@@ -14,7 +14,7 @@
 When the user clicks on an individual image
 Then the image should render larger on the screen with the description displayed.
 
-### Feature 2: Allow Users to Select Favorite Beasts
+### Feature 2: Allow Users To Select Their Favorite Beasts
 
 * Given that a user wants to view specific images
 When the user enters a character into the search field
