@@ -2,7 +2,7 @@
 
 ## Horned Beasts
 
-* This is an application that displays images and information of horned animals. This application will allow users to filter the images by the number of horns and can choose their favorite image. In addition to that I focused on the component structure of this  application and I used Vite with filled components.
+* This is an application that displays images and information of horned animals. This application will allow users to filter the images by the number of horns and can choose their favorite image. In addition to that I focused on the component structure of this  application and I used Vite with filled components and Bootstrap.
 
 
 ### Author: Brian Kimbrow
